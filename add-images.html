@@ -56,7 +56,7 @@ display:block;}
       <div diaplay="hide" data-w-id="9be11b4d-896e-36ce-3f97-602f6e43b454" style="opacity:0" class="tutorial-pop-up-back-video">
         <div class="youtube w-embed w-iframe"><iframe controls="" autoplay="" style="width:100%; height:600px;" src="https://www.youtube.com/embed/D5RHMSqmVX8?autoplay=1&loop=1&playlist=D5RHMSqmVX8&controls=0&start=63" frameborder="0" allow="encrypted-media">
 </iframe></div>
-        <div data-poster-url="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.webm,https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.mp4" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="ipad w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-poster-00001.jpg&quot;)" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.webm" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.mp4" data-wf-ignore="true"></video></div>
+        <div data-poster-url="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.webm,https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.mp4" data-loop="true" data-wf-ignore="true" class="ipad w-background-video w-background-video-atom"><video id="myVideo" loop="true" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-poster-00001.jpg&quot;)" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.webm" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5a8eea2b2f2961000181ad0a/5a99c3f5f6d24d0001620448_960upload images-transcode.mp4" data-wf-ignore="true"></video></div>
       </div>
       <a href="share-to-social-media.html" data-w-id="9de39b3a-9bd1-15fe-0dfd-eb6c5d418dcc" style="display:none;opacity:1;width:30%;height:50PX;background-color:rgb(199,185,135)" class="next w-inline-block">
         <div data-w-id="26561ca5-6bd3-4969-6060-edc12b4b711e" class="buttom-text">Next</div>
@@ -91,6 +91,10 @@ display:block;}
     var closeTutorial = function() {
     	parent.postMessage("Close Popup",'*');
     }
+    
+    setTimeout(function(){
+    document.getElementById("myVideo").play();
+}, 18100);
 </script>
 </body>
 </html>
